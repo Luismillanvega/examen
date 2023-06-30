@@ -6,3 +6,231 @@
 
 # Compiled Pre-Linked Libraries
 *.plx
+CREATE table lahorabuena_t(
+id_lahorabuena int,
+nombre NVARCHAR2(30),
+precio nvarchar2(30),
+tipo nvarchar2(30),
+marca NVARCHAR2 (30));
+
+select*from lahorabuena_t;
+select*from marca_patito_t;
+select*from comida_t;
+
+create table comida_t(
+id_comida int,
+tipo NVARCHAR2(30));
+
+create table marca_patito_t(
+id_marcapatito int,
+marca nvarchar2(30));
+
+drop table lahorabuena_t;
+drop table comida_t;
+drop table marca_patito_t;
+
+insert into lahorabuena_t values (1,'coca','11','1','1');
+insert into comida_t values (1,'refresco');
+insert into marca_patito_t values (1,'coca cola');
+
+insert into  lahorabuena_t values (2,'sprite','12','1','1');
+insert into  comida_t values (2,'refresco');
+insert into marca_papito_t values (2,'coca cola');
+
+insert into lahorabuena_t values (3,'pepsi','13','1','1');
+insert into comida_t values (3,'refresco');
+insert into marca_patito_t values(3,'coca cola');
+
+insert into lahorabuena_t values (4,'jarito','11','1','1');
+insert into comida_t values (4,'refresco');
+insert into marca_patito_t values (4,'red cola');
+
+insert into lahorabuena_t values (5,'canelitas','15','2','2');
+insert into comida_t values (5,'galletas');
+insert into marca_patito_t values (5,'gamesa');
+
+insert into lahorabuena_t values (6,'marias','13','2','2');
+insert into comida_t values (6,'galletas');
+insert into marca_patito_t values (6,'gamesa');
+
+insert into lahorabuena_t values (7,'emperador','14','2','2');
+insert into comida_t values (7,'galletas');
+insert into marca_patito_t values (7,'gamesa');
+
+insert into lahorabuena_t values (8,'chokis','15','2','2');
+insert into comida_t values (8,'galletas');
+insert into marca_patito_t values (8,'gamesa');
+
+insert into lahorabuena_t values (9,'mamut','10','2','2');
+insert into comida_t values (9,'galletas');
+insert into marca_patito_t values (9,'gamesa');
+
+insert into lahorabuena_t values (10,'arcoiris','15','2','2');
+insert into comida_t values (10, 'galletas');
+insert into marca_patito_t values (10,'gamesa');
+
+insert into lahorabuena_t values (11,'doritos','16','3','3');
+insert into comida_t values (11,'papas');
+insert into marca_patito_t values (11,'sabritas');
+
+insert into lahorabuena_t values (12,'runners','14','3','3');
+insert into comida_t values (12,'papas');
+insert into marca_patito_t values (12,'sabritas');
+
+insert into lahorabuena_t values (13,'rancheritos','15','3','3');
+insert into comida_t values (13,'papas');
+insert into marca_patito_t values (13,'sabritas');
+
+insert into lahorabuena_t values (14,'rufles','17','3','3');
+insert into comida_t values (14,'papas');
+insert into marca_patito_t values (14,'sabritas');
+
+insert into lahorabuena_t values (15,'chetos','15','3','3');
+insert into comida_t values (15,'papas');
+insert into marca_patito_t values (15,'sabritas');
+
+insert into lahorabuena_t values (16,'paquetaxo','18','3','3');
+insert into comida_t values (16,'papas');
+insert into marca_patito_t values (16,'sabritas');
+
+insert into lahorabuena_t values (17,'takis','14','4','4');
+insert into comida_t values (17,'papa');
+insert into marca_patito_t values (17,'barcel');
+
+insert into lahorabuena_t values (18,'runners','15','4','4');
+insert into comida_t values (18,'papas');
+insert into marca_patito_t values (18,'barcel');
+
+insert into lahorabuena_t values (19,'toreadas','16','4','4');
+insert into comida_t values (19,'papas');
+insert into marca_patito_t values (19,'barcel');
+
+insert into lahorabuena_t values (20,'chipotle','10','4','4');
+insert into comida_t values (20,'papas');
+insert into marca_patito_t values (20,'barcel');
+
+insert into lahorabuena_t values (21,'nachos','14','4','4');
+insert into comida_t values (21,'papas');
+insert into marca_patito_t values (21,'barcel');
+
+insert into lahorabuena_t values (22,'bomba','3','5','5');
+insert into comida_t values (22,'paleta');
+insert into marca_patito_t values (22,'chupa');
+
+insert into lahorabuena_t values (23,'barril','2','5','5');
+insert into comida_t values (23,'paleta');
+insert into marca_patito_t values (23,'chupa');
+
+insert into lahorabuena_t values (24,'sandia','2','5','5');
+insert into comida_t values (24,'paleta');
+insert into marca_patito_t values (24,'chupa');
+
+insert into lahorabuena_t values (25,'chicle','4','5','5');
+insert into comida_t values (25,'paleta');
+insert into marca_patito_t values (25,'chupa');
+
+
+insert into lahorabuena_t values (26,'corona','75','6','6');
+insert into comida_t values (26,'cerveza');
+insert into marca_patito_t values (26,'inbev');
+    
+ insert into lahorabuena_t values (27,'came','6','7','7');
+insert into comida_t values (27,'cigarro');
+insert into marca_patito_t values (27,'montana');
+       
+ insert into lahorabuena_t values (28,'cloro','24','8','8');
+insert into comida_t values (28,'hipoclorito');
+insert into marca_patito_t values (28,'cloroAlex');
+
+ insert into lahorabuena_t values (29,'cerillos','5','9','9');
+insert into comida_t values (29,'fosforo');
+insert into marca_patito_t values (29,'fuego');
+
+ insert into lahorabuena_t values (30,'tortillas','18','10','10');
+insert into comida_t values (30,'maiz');
+insert into marca_patito_t values (30,'esquina');
+
+
+DROP TRIGGER tri_tabla_3;
+DROP SEQUENCE secuencia_comida_2;
+
+CREATE SEQUENCE secuencia_comida;
+CREATE OR REPLACE TRIGGER trigger_comida
+BEFORE INSERT ON comida_t
+FOR EACH ROW
+BEGIN
+  :NEW.id_comida := secuencia_comida.NEXTVAL;
+END;
+INSERT INTO comida_t (tipo) VALUES ('Hamburguesa');
+
+CREATE SEQUENCE secuencia_comida_2;
+CREATE OR REPLACE TRIGGER trigger_marca
+BEFORE INSERT ON marca_patito_t
+FOR EACH ROW
+BEGIN
+  :NEW.id_marcapatito := secuencia_comida_2.NEXTVAL;
+END;
+
+INSERT INTO marca_patito_t (marca) VALUES ('Hamburguesa');
+
+
+
+/**--el from los defini con tres la dividi para cada una de las tablas involucradas
+l para lahorabuena_t, c para comida_t y m para marca_patito_t, 
+l y c utilizando la condición de unión l.tipo = c.tipo combina los registros de ambas  la coincidencia de la columna tipo
+full join entre el resultado anterior y la consulta m utilizando la condición de unión l.marca = m.marca esto combina los registros
+select, se seleccionan las columnas nombre de la una de las consulta l, precio de la segunda consulta l, tipo de la tercera consulta c y marca de la  siguiente consulta m
+combinando los registros en función de la coincidencia de las columnas tipo y marca--**/
+SELECT
+  l.nombre,
+  l.precio,
+  c.tipo,
+  m.marca
+FROM
+  (SELECT
+    nombre,
+    precio,
+    tipo,
+    marca
+  FROM
+    lahorabuena_t) l
+FULL JOIN
+  (SELECT
+    tipo
+  FROM
+    comida_t) c ON l.tipo = c.tipo
+FULL JOIN
+  (SELECT
+    marca
+  FROM
+    marca_patito_t) m ON l.marca = m.marca;
+
+select l.nombre,l.marca from lahorabuena_t l inner JOIN marca_patito_t m ON l.id_lahorabuena = m.id_marcapatito;
+
+SELECT l.nombre, l.marca, c.tipo FROM lahorabuena_t l LEFT OUTER JOIN comida_t c ON l.tipo = c.tipo;
+
+SELECT t1.nombre, t3.marca FROM lahorabuena_t t1 RIGHT JOIN marca_patito_t t3 ON 1 = 1;
+
+/*--lo dividi en tres y cada uno representa una tabla----*/
+SELECT l.nombre, l.marca, NULL AS tipo /*-divición 1-*/
+/*-- realizando un  left join entre la tabla lahorabuena_t
+y la tabla comida_t, utilizando la condición 1 = 0 ya que esto me asegura que no va haber relacion entre las tablas en columna nombre y marca--*/
+FROM lahorabuena_t l
+LEFT JOIN comida_t c ON 1 = 0
+LEFT JOIN marca_patito_t m ON 1 = 0
+
+UNION /*-divición 2-*/
+/*-realice un left join entre la tabla lahorabuena_t y la tabla marca_patito_t utilizando la condición 1 = 0 de igual manera me aseguro de que no haya una relacion entre las tablas marca
+agregando null para valor de columnas nombre y tipo-*/
+SELECT NULL AS nombre, m.marca, NULL AS tipo
+FROM lahorabuena_t l
+RIGHT JOIN marca_patito_t m ON 1 = 0
+
+UNION /*-divición 3-*/
+ /*-tambien realice  left join con la tabla comida_t y la tabla marca_patito_t utilizando la condición 1 = 0 de igual manera me aseguro de que no haya una relacion entre las tablas
+ seleccionando la columna de tipo de la tabla comida_t agregando el null como valor para las columnas nombre y marca-*/
+SELECT NULL AS nombre, NULL AS marca, c.tipo
+FROM comida_t c
+LEFT JOIN lahorabuena_t l ON 1 = 0
+LEFT JOIN marca_patito_t m ON 1 = 0;
+/*- El UNION asegura que no haya duplicados en el resultado final.-*/
